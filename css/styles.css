@@ -380,9 +380,7 @@ img {
 }
 
 .item-media {
-    outline: 1px solid tomato;
     border-radius: 50%;
-    background-color: antiquewhite;
 
 }
 
@@ -395,15 +393,10 @@ img {
     justify-content: center;
     width: 44px;
     height: 44px;
-
-
-
-    /* background: transparent; */
-
 }
 
 .media-svg {
-    display: block;
+
 
     fill: #AFB1B8;
 
@@ -411,13 +404,55 @@ img {
     height: 20px;
 }
 
-/* .item-media:hover, */
-/* .item-media .media-svg:hover, */
-.item-media:hover {
+
+.item-media:hover .media-svg,
+.item-media:hover,
+.item-media:focus .media-svg,
+.item-media:focus {
     background-color: var(--accent-color);
     fill: white;
 
 }
+
+/* Clients */
+
+
+.clients-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 30px;
+
+
+}
+
+.clients-item {}
+
+.clients-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+
+
+}
+
+
+
+.clients-link:hover .clients-icon,
+.clients-link:hover {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+
+}
+
+
 
 /* portfolio */
 .examples {}
