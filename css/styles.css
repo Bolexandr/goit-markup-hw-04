@@ -63,6 +63,7 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
 
+
 }
 
 img {
@@ -158,28 +159,24 @@ img {
     gap: 10px;
 }
 
-.moilto:hover .icon,
-.moilto:focus .icon,
-.moilto:hover .icon-s,
-.moilto:focus .icon-s,
-.moilto:hover,
-.moilto:focus {
+
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
-    fill: var(--accent-color);
 }
 
 .icon {
     display: inline-block;
     height: 12px;
     width: 16px;
-    fill: var(--primary-text-color);
+    fill: currentColor;
 }
 
 .icon-s {
     display: inline-block;
     height: 16px;
     width: 10px;
-    fill: var(--primary-text-color);
+    fill: currentColor;
 }
 
 
@@ -189,6 +186,10 @@ img {
 
     padding-bottom: 200px;
     padding-top: 200px;
+
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero {
@@ -230,7 +231,7 @@ img {
 .button-hero:hover,
 .button-hero:focus {
     background-color: #188CE8;
-    ;
+
 }
 
 .button-portfolio:hover,
@@ -384,7 +385,7 @@ img {
 }
 
 .item-media {
-    border-radius: 50%;
+    /* border-radius: 50%; */
 
 }
 
@@ -400,8 +401,6 @@ img {
 }
 
 .media-svg {
-
-
     fill: #AFB1B8;
 
     width: 20px;
@@ -409,13 +408,10 @@ img {
 }
 
 
-.item-media:hover .media-svg,
-.item-media:hover,
-.item-media:focus .media-svg,
-.item-media:focus {
-    background-color: var(--accent-color);
+.link-media:hover .media-svg, .link-media:hover,
+.link-media:focus .media-svg, .link-media:focus {
     fill: white;
-
+    background-color: var(--accent-color);
 }
 
 /* Clients */
@@ -448,7 +444,9 @@ img {
 }
 
 .clients-link:hover .clients-icon,
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus .clients-icon,
+.clients-link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
 
@@ -512,7 +510,8 @@ img {
     padding: 20px 24px;
 }
 
-.item-portfolio:hover {
+.item-portfolio:hover,
+.item-portfolio:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -592,10 +591,11 @@ footer>.container {
     color: #ffffff;
 }
 
-.footer-media .item-media {
+.footer-media .link-media {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-media .item-media:hover {
+.footer-media .link-media:hover,
+.footer-media .link-media:focus {
     background-color: var(--accent-color);
 }
