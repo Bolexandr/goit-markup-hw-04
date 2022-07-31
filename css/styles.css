@@ -139,8 +139,7 @@ img {
     color: var(--accent-color);
 }
 
-/* .contact-link:hover, */
-/* .contact-link:focus , */
+
 .nav-link,
 .contact-link {
     font-size: 14px;
@@ -348,9 +347,6 @@ img {
     padding-bottom: 32px;
 }
 
-/* .item-stuff:not(:last-child) {
-    margin-right: 30px;
-} */
 
 .employee-name {
     font-weight: 500;
@@ -384,10 +380,7 @@ img {
 
 }
 
-.item-media {
-    /* border-radius: 50%; */
-
-}
+.item-media {}
 
 .link-media {
     border-radius: 50%;
